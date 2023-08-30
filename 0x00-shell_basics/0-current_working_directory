@@ -1,2 +1,2 @@
 #!/bin/bash
-echo"/tmp/correction/0545365580079738025314698937324679985854_5/205/476883/0x00-shell_basics"
+curr_dir=$(pwd); echo "$curr_dir"
