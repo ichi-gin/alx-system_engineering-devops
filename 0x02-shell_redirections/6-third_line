@@ -1,2 +1,2 @@
-#!bin/bash
-sed -n 3p iacta
+#!/bin/bash
+head -n 3 filename | tail -n 1
