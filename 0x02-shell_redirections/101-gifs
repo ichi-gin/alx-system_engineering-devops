@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type f -iname "*.gif" | rev | cut -d. -f2- | rev | sort -f | sed 's/\.gif$//' | sed '/^\.$/d' | sed '/^\.\.$/d' | sed '/^\.$/d' | sed '/^\.\.$/d' | sed '/^$/d' | sed -n '1h;2,$H;${g;s/\n/\n/;p}' | sed -n '$!p' | sed '$!N;s/\n$/\n/;P;D'
